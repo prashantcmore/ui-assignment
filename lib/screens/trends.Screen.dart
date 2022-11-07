@@ -51,6 +51,7 @@ class _TrendsScreenState extends State<TrendsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    var deviceSize = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -88,8 +89,8 @@ class _TrendsScreenState extends State<TrendsScreen> {
         child: Column(
           children: [
             Container(
-              height: 120,
-              width: MediaQuery.of(context).size.width,
+              height: deviceSize.height * 0.15,
+              width: deviceSize.width,
               child: UsersGrid(),
             ),
             Row(
@@ -113,14 +114,14 @@ class _TrendsScreenState extends State<TrendsScreen> {
             ),
             Divider(),
             Container(
-              height: 35,
-              width: MediaQuery.of(context).size.width,
+              height: deviceSize.height * 0.05,
+              width: deviceSize.width,
               child: CategoryWidget(),
             ),
             Divider(),
             Container(
-              height: 200,
-              width: MediaQuery.of(context).size.width,
+              height: deviceSize.height * 0.25,
+              width: deviceSize.width,
               child: ProductsGrid(),
             ),
             Divider(),
@@ -145,8 +146,8 @@ class _TrendsScreenState extends State<TrendsScreen> {
             ),
             Divider(),
             Container(
-              height: 260,
-              width: MediaQuery.of(context).size.width,
+              height: deviceSize.height * 0.25,
+              width: deviceSize.width,
               child: ShortsGrid(),
             ),
             Divider(),
@@ -171,8 +172,8 @@ class _TrendsScreenState extends State<TrendsScreen> {
             ),
             Divider(),
             Container(
-              height: 200,
-              width: MediaQuery.of(context).size.width,
+              height: deviceSize.height * 0.22,
+              width: deviceSize.width,
               child: ShortsGrid(),
             ),
           ],
