@@ -7,13 +7,6 @@ class ProductItem extends StatelessWidget {
   Widget build(BuildContext context) {
     final products = Provider.of<UserData>(context, listen: false);
     return GridTile(
-      // header: Positioned(
-      //     left: 5,
-      //     top: 0,
-      //     child: Chip(
-      //         label: Text(
-      //       "123k",
-      //     ))),
       child: GestureDetector(
         onTap: () {},
         child: Image.network(
